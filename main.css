@@ -1,0 +1,223 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+#balance {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Final Addition: Updated styles for balance display */
+.balance-positive {
+  color: #45a148;
+}
+.balance-negative {
+  color: #E53935;
+}
+.balance-zero {
+  color: #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Final Addition: Differentiate styles for income and expense items */
+li.income {
+  border-left: 5px solid #45a148;
+}
+
+li.expense {
+  border-left: 5px solid #E53935;
+}
+
+/* New styles for income and expense items */
+.income {
+  color: green;
+} 
+
+.expense {
+  color: red;
+} 
+
+/* New styles for add button */
+.add-btn {
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background-color: #00796B;
+}
+
+.edit-btn, .delete-btn {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Optional: New styles for edit and delete buttons (commented out for now)
+.edit-btn {
+  background-color: #3F51B5;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #303F9F;
+}
+
+.delete-btn {
+  background-color: #E53935;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #C62828;
+} */
+
+#transaction-form {
+  margin-bottom: 20px;
+}
+
+/* Final Addition: Styles for category filter dropdown */
+#filter-category {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+#filter-category:focus {
+  border-color: #009688;
+  outline: none;
+}
+
+label[for="filter-category"] {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+/* Final Addition: Styles for type filter dropdown */
+#filter-type {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+#filter-type:focus {
+  border-color: #009688;
+  outline: none;
+}
+label[for="filter-type"] {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Final Addition: Styles for sort order dropdown */
+#sort-order {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+#sort-order:focus {
+  border-color: #009688;
+  outline: none;
+}
+label[for="sort-order"] {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.sort-group {
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.sort-feedback {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Final Addition: Styles for export buttons */
+.export-csv-btn {
+  background-color: #009688;
+  color: white;
+}
+
+.export-csv-btn:hover {
+  background-color: #00796B;
+}
+
+.export-pdf-btn {
+  background-color: #FF7043;
+  color: white;
+}
+
+.export-pdf-btn:hover {
+  background-color: #F4511E;
+}
+
+/* Final Addition: Footer styles */
+.app-footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #777;
+}
